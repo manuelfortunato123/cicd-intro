@@ -7,3 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Helloooooooworls"
+      - run: echo "My secret is ${{ secrets.SEGREDO }}"
+      - run: echo "My variable is ${{ vars.VARIAVEL }}"
+
