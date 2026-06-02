@@ -6,4 +6,6 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello worls"
+      - run: echo "Hello world"
+      - run: echo "My variable is ${{ vars.variavel }}"
+      - run: echo "My secret is ${{ secrets.segredo }}"
